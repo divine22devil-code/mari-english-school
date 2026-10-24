@@ -27,6 +27,169 @@
     @media(max-width:820px){.zoom-strip{grid-template-columns:1fr}.zoom-title h4{font-size:45px}.wrap{width:calc(100% - 42px)}.announce{font-size:8px;letter-spacing:.12em}.head-inner{min-height:70px}.main-nav,.head-cta{display:none}.mobile-menu-btn{display:block}.mobile-panel{display:none;position:absolute;top:100%;left:0;width:100%;background:var(--paper);border-bottom:1px solid var(--line);padding:14px 23px 24px;box-shadow:0 18px 28px #2221}.mobile-panel.open{display:flex;flex-direction:column;gap:4px}.mobile-panel a{display:block;padding:15px 4px;border-bottom:1px solid var(--line);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.06em}.hero{grid-template-columns:1fr;min-height:0}.hero-copy{min-height:540px;padding:66px 29px 73px}.hero-topnote{margin-bottom:28px}.hero-title{font-size:clamp(71px,14vw,122px)}.hero-side{height:420px}.hero-side img{object-position:50% 47%}.hero-index{bottom:27px;left:30px}.ticker-inner{gap:25px;font-size:9px;padding:17px 10px}.section{padding:82px 0}.about-grid{grid-template-columns:1fr;gap:55px}.about-visual{max-width:560px}.portrait-frame{max-width:490px}.about-heading{margin:18px 0}.about-seal{right:2px}.method{padding:0 0 80px}.method-cards{grid-template-columns:1fr 1fr}.method-card:nth-child(2){border-right:0}.method-card:nth-child(-n+2){border-bottom:1px solid var(--line)}.pricing{padding:80px 0}.pricing-head{flex-direction:column;gap:25px;align-items:start}.pricing-grid{grid-template-columns:1fr;max-width:550px;margin:auto}.price-card{min-height:0}.card-image{height:140px}.card-body{padding:30px}.card-desc{min-height:0}.card-price{font-size:48px}.contacts{padding:84px 0}.contacts-grid{grid-template-columns:1fr;gap:55px}.contacts h2{font-size:clamp(68px,13vw,110px)}.exam{padding:80px 0}.exam-heading{display:block}.exam-heading p{margin-top:23px}.exam-grid{grid-template-columns:1fr;gap:45px}.exam-box{max-width:570px}.course-cert{grid-template-columns:1fr;gap:45px;margin-top:65px;padding-top:55px}.course-cert-text{order:1}.course-cert-image{order:2}.footer-top{flex-wrap:wrap}}
     @media(max-width:490px){.zoom-strip{padding:26px 20px}.zoom-details{grid-template-columns:minmax(0,1fr)}.wrap{width:calc(100% - 34px)}.header .brand-mark{font-size:27px}.header .brand-caption{font-size:7px}.head-inner{min-height:64px}.hero-copy{padding:49px 19px 64px;min-height:505px}.hero-title{font-size:clamp(62px,15.5vw,84px)}.hero-description{font-size:12px;line-height:1.9}.hero-links{gap:17px}.hero-side{height:370px}.hero-badge{width:97px;height:97px;top:20px;right:20px;font-size:13px}.hero-index{left:20px;bottom:20px}.display{font-size:62px}.about-heading{font-size:55px}.portrait-frame{padding:10px;box-shadow:12px 12px 0 #d9d8d2}.about-seal{height:95px;width:95px;font-size:15px;right:-3px}.stats{gap:10px}.stat b{font-size:32px}.stat span{font-size:9px}.method-top{display:block}.method-top h3{font-size:40px}.method-cards{grid-template-columns:1fr}.method-card{min-height:0;padding:20px}.method-card:nth-child(n){border-right:0;border-bottom:1px solid var(--line)}.method-card:last-child{border-bottom:0}.zoom-strip{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px;padding:34px 32px;margin-top:27px;background:#d9dfda;align-items:center}.zoom-title h4{font:400 clamp(30px,3.4vw,48px)/1.15 var(--serif);letter-spacing:-.05em;margin:12px 0 0}.zoom-title h4 em{color:var(--burgundy)}.zoom-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));min-width:0;gap:25px;overflow-wrap:anywhere}.zoom-details b{font-size:13px}.zoom-details p{font-size:12px;line-height:1.85;color:#555f5b;margin:9px 0 0}.review-strip{flex-direction:column;align-items:start;padding:21px}.pricing-head .display{font-size:64px}.card-body{padding:25px 22px}.card-title{font-size:48px}.contacts h2{font-size:70px}.contact-row .name{font-size:25px}.exam-heading .display{font-size:62px}.exam-features{gap:12px}.exam-feature strong{font-size:25px}.exam-box{padding:12px}.certificate-viewport img{width:min(100%,330px)}.course-cert-image{padding:10px;box-shadow:8px 8px 0 #dbd8d0}.footer-name{font-size:40px}.footer-bottom{flex-direction:column;gap:8px}.head-tools{gap:6px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  
+/* Mari English School — phone-first refinement (desktop/tablet unaffected) */
+@media (max-width: 600px) {
+  :root { --mobile-gutter: 20px; }
+  html { scroll-padding-top: 76px; }
+  body { overflow-x: clip; }
+  .wrap { width: calc(100% - 2 * var(--mobile-gutter)); max-width: 520px; }
+  .announce { min-height: 25px; height: auto; padding: 6px 14px; line-height: 1.4; font-size: 8px; letter-spacing: .105em; text-align: center; }
+  .header { background: rgba(244,240,233,.985); }
+  .head-inner { min-height: 61px; gap: 8px; }
+  .brand { gap: 0; min-width: 0; }
+  .brand img { width: 84px !important; height: 52px !important; }
+  .head-tools { gap: 10px; margin-left: auto; }
+  .lang-toggle { gap: 1px; font-size: 12px; }
+  .lang-toggle button { min-width: 31px; min-height: 44px; padding: 8px 2px; font-size: 12px; }
+  .mobile-menu-btn { display: grid; place-items: center; font-size: 25px; width: 44px; height: 44px; padding: 0; line-height: 1; }
+  .mobile-panel { padding: 10px var(--mobile-gutter) 20px; max-height: min(70dvh, 480px); overflow-y: auto; }
+  .mobile-panel a { font-size: 13px; min-height: 49px; display: flex; align-items: center; }
+  .hero { min-height: 0; grid-template-columns: minmax(0,1fr); }
+  .hero-copy { min-height: 0; padding: 39px var(--mobile-gutter) 34px; }
+  .hero-topnote { margin-bottom: 23px; gap: 11px; font-size: 10px; line-height: 1.55; letter-spacing: .13em; }
+  .hero-topnote span:first-child { flex: 0 0 auto; display: grid; place-items: center; width: 43px; height: 43px; padding: 0; font-size: 18px; }
+  .hero-title { font-size: clamp(58px, 12.3vw, 77px); line-height: .99; letter-spacing: -.085em; margin: 0 0 22px; overflow-wrap: normal; }
+  .hero-description { max-width: 435px; font-size: 13.5px; line-height: 1.72; margin: 0 0 22px; }
+  .hero-links { display: flex; flex-direction: column; gap: 16px; align-items: stretch; }
+  .hero-links .pill-link { width: 100%; min-height: 50px; padding: 13px 17px; font-size: 12px; }
+  .hero-links .a-line { align-self: flex-start; padding: 5px 0 6px; font-size: 12px; }
+  .hero-index { display: none; }
+  .hero-side { height: clamp(254px, 72vw, 365px); }
+  .hero-side img { object-position: center 52%; }
+  .hero-badge { top: 17px; right: 17px; width: 96px; height: 96px; padding: 13px; font-size: 13px; box-shadow: 0 8px 28px #0003; }
+  .hero-side-bottom { left: var(--mobile-gutter); right: var(--mobile-gutter); bottom: 18px; font-size: 9px; letter-spacing: .045em; gap: 8px; }
+  .hero-side-bottom span { white-space: nowrap; }
+  .ticker-inner { justify-content: center; padding: 12px 10px; width: 100%; min-height: 43px; gap: 0; }
+  .ticker-inner span { display: none; }
+  .ticker-inner span:nth-child(3) { display: inline; font-size: 9.5px; letter-spacing: .15em; color: var(--burgundy); }
+  .section { padding: 70px 0 67px; }
+  .about-grid { gap: 38px; grid-template-columns: minmax(0,1fr); }
+  .about-visual { width: calc(100% - 18px); max-width: 400px; margin: 0 auto; }
+  .portrait-frame { padding: 9px; box-shadow: 12px 12px 0 #d9d8d2; }
+  .portrait-frame img { aspect-ratio: 1 / 1.02; object-position: center 20%; }
+  .about-seal { right: -16px; bottom: -12px; width: 101px; height: 101px; font-size: 15px; }
+  .kicker { font-size: 10px; line-height: 1.55; gap: 9px; letter-spacing: .11em; }
+  .kicker::before { width: 24px; flex: 0 0 24px; }
+  .about-heading { font-size: clamp(42px, 10.7vw, 64px); line-height: 1.075; letter-spacing: -.065em; margin: 21px 0 21px; }
+  .about-p { font-size: 13.5px; line-height: 1.78; margin: 0 0 15px; }
+  .stats { margin-top: 24px; padding-top: 19px; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; }
+  .stat { min-width: 0; }
+  .stat b { font-size: clamp(25px, 7vw, 34px); white-space: nowrap; }
+  .stat span { font-size: 9px; line-height: 1.5; letter-spacing: .03em; }
+  .method { padding: 0 0 66px; }
+  .method-top { display: block; padding-top: 26px; margin-bottom: 25px; }
+  .method-top h3 { font-size: clamp(36px, 9.6vw, 53px); line-height: 1.12; margin-top: 14px; }
+  .method-top .eyebrow { display: block; margin-top: 15px; font-size: 9px; letter-spacing: .12em; }
+  .method-cards { display: grid; grid-template-columns: 1fr; }
+  .method-card { min-height: 0; display: grid; grid-template-columns: 46px minmax(0,1fr); gap: 14px; padding: 19px 15px; }
+  .method-no { font-size: 24px; line-height: 1.2; }
+  .method-card h4 { font-size: 14px; line-height: 1.35; margin: 0 0 7px; }
+  .method-card p { font-size: 12.5px; line-height: 1.62; }
+  /* Corrects the accidental desktop two-column Zoom override at <=490px. */
+  .zoom-strip { display: grid; grid-template-columns: minmax(0,1fr); gap: 23px; padding: 28px 22px; margin-top: 20px; align-items: stretch; }
+  .zoom-title h4 { font-size: clamp(36px, 9.3vw, 47px); line-height: 1.12; margin: 11px 0 0; }
+  .zoom-details { display: grid; grid-template-columns: minmax(0,1fr); min-width: 0; gap: 19px; overflow-wrap: normal; }
+  .zoom-details > div { padding-top: 16px; border-top: 1px solid #b5c1ba; }
+  .zoom-details b { font-size: 13px; line-height: 1.5; }
+  .zoom-details p { font-size: 12.5px; line-height: 1.74; margin: 7px 0 0; }
+  .review-strip { margin-top: 18px; padding: 21px 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 15px; }
+  .review-strip span { font-size: 13px; line-height: 1.7; }
+  .review-strip a { font-size: 12px; }
+  .pricing { padding: 75px 0 77px; }
+  .pricing-head { gap: 18px; margin-bottom: 27px; }
+  .pricing-head .display { font-size: clamp(57px, 13vw, 78px); line-height: 1; }
+  .pricing-head p { font-size: 13px; line-height: 1.75; max-width: 440px; margin: 0; }
+  .currency-holder { margin-top: 22px; display: flex; flex-direction: column; align-items: flex-start; gap: 9px; }
+  .currency-holder label { font-size: 10px; }
+  .currency-buttons { display: flex; max-width: 100%; }
+  .currency-buttons button { min-height: 45px; min-width: 47px; padding: 9px 13px; font-size: 13px; }
+  .pricing-grid { display: grid; grid-template-columns: minmax(0,1fr); gap: 23px; max-width: 520px; margin: 0 auto; }
+  .price-card { min-height: 0; }
+  .price-card:hover { transform: none; box-shadow: none; }
+  .card-image { height: clamp(105px, 32vw, 158px); }
+  .card-image img { width: 100%; height: 100%; object-fit: cover; }
+  .card-body { padding: 23px 22px 24px; }
+  .card-tag { font-size: 9px; letter-spacing: .12em; }
+  .card-serial { font-size: 20px; }
+  .card-title { font-size: clamp(37px, 10.5vw, 52px); line-height: 1.16; margin: 16px 0 11px; }
+  .card-desc { font-size: 13px; line-height: 1.72; min-height: 0; }
+  .card-price { margin: 23px 0 7px; font-size: clamp(43px, 11vw, 52px); }
+  .card-price small { font-size: 12px; }
+  .card-qty { font-size: 10px; line-height: 1.4; margin-bottom: 15px; }
+  .price-breakdown { padding: 14px 0; margin-bottom: 21px; gap: 11px; }
+  .price-line { font-size: 12px; gap: 12px; }
+  .price-line strong { white-space: nowrap; }
+  .card-includes { gap: 12px; margin-bottom: 26px; }
+  .card-includes li { font-size: 12.5px; line-height: 1.5; }
+  .card-cta { min-height: 48px; padding: 14px 16px; font-size: 12px; }
+  .featured:after { top: -12px; right: 13px; }
+  .price-note { font-size: 11.5px; line-height: 1.75; margin-top: 24px; }
+  .contacts { padding: 75px 0 80px; }
+  .contacts:before { font-size: 480px; right: -110px; top: -60px; }
+  .contacts-grid { display: grid; grid-template-columns: minmax(0,1fr); gap: 39px; }
+  .contacts h2 { font-size: clamp(55px, 13vw, 77px); line-height: 1.02; margin: 19px 0 22px; }
+  .contact-intro { font-size: 13.5px; line-height: 1.75; margin-bottom: 25px; }
+  .contact-buttons { gap: 12px; }
+  .contact-buttons .pill-link { width: 100%; min-height: 49px; justify-content: space-between; padding: 14px 17px; }
+  .contact-right { min-width: 0; }
+  .contact-row { min-height: 81px; padding: 18px 0; }
+  .contact-row .name { font-size: 26px; }
+  .contact-row small { font-size: 11px; line-height: 1.55; overflow-wrap: anywhere; }
+  .contact-row .arr { font-size: 24px; }
+  .contact-caption { font-size: 11.5px; }
+  .exam { padding: 76px 0; }
+  .exam-heading { display: block; margin-bottom: 32px; }
+  .exam-heading .display { font-size: clamp(57px, 13vw, 81px); line-height: 1; }
+  .exam-heading p { font-size: 13px; line-height: 1.78; margin-top: 19px; }
+  .exam-grid { display: grid; grid-template-columns: minmax(0,1fr); gap: 27px; }
+  .exam-left h3 { font-size: clamp(34px, 9vw, 48px); line-height: 1.15; }
+  .exam-left p { font-size: 13px; line-height: 1.78; }
+  .exam-features { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 11px 18px; margin: 26px 0 30px; }
+  .exam-feature { padding: 13px 0 3px; }
+  .exam-feature strong { font-size: clamp(24px, 6.5vw, 29px); }
+  .exam-feature span { font-size: 11.5px; line-height: 1.65; }
+  .exam-left .pill-link { width: 100%; min-height: 50px; font-size: 12px; }
+  .exam-box { padding: 13px 13px 19px; }
+  .certificate-viewport img { width: 100%; max-width: none; height: auto; }
+  .certificate-label { padding-top: 14px; margin-top: 15px; flex-wrap: wrap; }
+  .certificate-label span { font-size: 12px; }
+  .certificate-label small { font-size: 10px; }
+  .course-cert { display: grid; grid-template-columns: minmax(0,1fr); gap: 31px; margin-top: 62px; padding-top: 49px; }
+  .course-cert-text { order: 1; }
+  .course-cert-image { order: 2; padding: 10px; box-shadow: 8px 8px 0 #dbd8d0; }
+  .course-cert-text h3 { font-size: clamp(37px, 9.5vw, 50px); }
+  .course-cert-text p { font-size: 13px; line-height: 1.77; }
+  .chips { gap: 7px; margin-top: 20px; }
+  .chips span { font-size: 10px; padding: 10px; }
+  .disclaimer { margin-top: 21px; font-size: 11px; line-height: 1.75; }
+  .footer { padding: 31px 0 29px; }
+  .footer-top { display: block; padding-bottom: 26px; }
+  .footer-name { font-size: clamp(37px, 10.6vw, 51px); line-height: 1.15; }
+  .footer-top p { margin: 15px 0; font-size: 12.5px; line-height: 1.5; }
+  .footer-social { display: flex; flex-wrap: wrap; gap: 16px 21px; margin-top: 19px; }
+  .footer-social a { font-size: 11px; min-height: 30px; }
+  .footer-bottom { display: flex; flex-direction: column; gap: 11px; line-height: 1.5; }
+  .mobile-quick-cta { position: fixed; display: flex; bottom: 0; left: 0; right: 0; z-index: 95; padding: 10px max(16px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left)); background: rgba(244,240,233,.98); border-top: 1px solid var(--line); box-shadow: 0 -7px 35px #10111014; transform: translateY(120%); opacity: 0; pointer-events: none; transition: transform .25s ease, opacity .25s ease; }
+  .mobile-quick-cta.shown { transform: none; opacity: 1; pointer-events: auto; }
+  .mobile-quick-cta a { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 45px; padding: 12px 17px; background: var(--burgundy); color: #fff; font-size: 12px; font-weight: 800; letter-spacing: .02em; }
+  .footer { padding-bottom: calc(75px + env(safe-area-inset-bottom)); }
+}
+@media (max-width: 350px) {
+  :root { --mobile-gutter: 16px; }
+  .hero-title { font-size: 54px; }
+  .hero-topnote { font-size: 9px; }
+  .hero-description { font-size: 13px; }
+  .about-heading { font-size: 40px; }
+  .contacts h2 { font-size: 51px; }
+  .exam-heading .display { font-size: 54px; }
+  .stat b { font-size: 25px; }
+  .currency-buttons button { min-width: 44px; padding-inline: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mobile-quick-cta { transition: none; }
+}
+
   </style>
 </head>
 <body>
@@ -78,6 +241,9 @@
     </div></section>
   </main>
   <footer class="footer"><div class="wrap"><div class="footer-top"><div><div class="footer-name">Mari English School.</div><p data-i18n="footer_phrase">More than lessons. A different way to speak.</p></div><div class="footer-social"><a href="https://t.me/marienglishschool" target="_blank" rel="noopener noreferrer">Telegram ↗</a><a href="https://www.instagram.com/mari.english.school?exln=MXUyaXh6dG5kZjU5aQ==" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="mailto:mari.school.english@gmail.com">Email ↗</a></div></div><div class="footer-bottom"><span>© <span id="current-year">2026</span> MARI ENGLISH SCHOOL</span><span data-i18n="footer_online">ONLINE · ANYWHERE IN THE WORLD</span></div></div></footer>
+  <div class="mobile-quick-cta" id="mobile-quick-cta" aria-label="Quick booking">
+    <a href="https://t.me/marienglishschool" target="_blank" rel="noopener noreferrer"><span data-i18n="write">Записаться ↗</span></a>
+  </div>
   <script>
     const translations={
       ru:{announcement:'ONE-TO-ONE ONLINE ENGLISH · LEARN FROM ANYWHERE',nav_about:'Обо мне',nav_price:'Тарифы',nav_contact:'Контакты',nav_cefr:'Тест CEFR',write:'Записаться ↗',hero_note:'Персональная школа английского<br>для тех, кто хочет большего',hero_title:'English<br>with <em>character.</em>',hero_desc:'Живой английский, персональные программы и занятия без скучных шаблонов. От первой фразы до уверенного голоса — в твоём темпе.',see_prices:'Выбрать программу',meet_mari:'Познакомиться с Мари',about_kicker:'01 / Подробнее обо мне',about_title:'Hi, I’m <em>Mari.</em><br>Let’s talk English.',about_p1:'Я Мари Лемерсье — преподаватель английского, лингвист и билингв с детства. Уже около шести лет помогаю детям и взрослым не просто учить язык, а действительно использовать его в жизни.',about_p2:'Мой подход объединяет академическую базу, живую разговорную практику, современную лексику и темы, которые интересны именно тебе. Вместо одинаковых уроков для всех — занятия с характером.',stat_years:'лет преподавания',stat_private:'индивидуальный формат',stat_lang:'двуязычный подход',method_kicker:'Мой подход и образование',method_title:'Less textbook.<br><em>More real life.</em>',method_caption:'LANGUAGE IS A LIVING THING',method_1_title:'Билингвальная среда',method_1_desc:'Английский с детства, внимание к естественной речи, произношению и современной лексике.',method_2_title:'Лингвистическая база',method_2_desc:'Высшее лингвистическое образование SOAS University of London, теория языка и системный подход к грамматике.',method_3_title:'CELTA · TEFL/TESOL',method_3_desc:'Международные преподавательские программы и постоянное развитие методик.',method_4_title:'Практика вместо страха',method_4_desc:'Живые диалоги, видео, актуальные темы и понятные объяснения сложных правил.',zoom_kicker:'КАК ПРОХОДЯТ ЗАНЯТИЯ',zoom_title:'Real conversations.<br><em>On Zoom.</em>',zoom_1_h:'Общаемся, а не заучиваем',zoom_1_p:'Уроки в Zoom с живыми диалогами, видео и темами, близкими тебе. Практикуем английский с первых занятий.',zoom_2_h:'Понятная система',zoom_2_p:'Грамматика, разговорная речь и домашние задания с проверкой — в балансе под твой уровень и цели.',review_tease:'Интересно, как всё это выглядит глазами учеников? Их слова лучше любой рекламы.',reviews_link:'Отзывы в Instagram',price_kicker:'02 / Тарифы на занятия',pricing_title:'Find your <em>fit.</em>',currency:'Валюта',pricing_desc:'Три разных формата — один принцип: твои цели, твой ритм, твой английский. Выбери программу под свой характер.',together_tag:'FLEXIBLE / 40 MIN',together_desc:'Для путешествий, повседневного английского, школы, университета и комфортного старта.',per_lesson:'/ урок',together_mode:'1:1 · ZOOM · 40 МИНУТ',eight_lessons:'8 занятий / месяц',twelve_lessons:'12 занятий / месяц',together_f1:'Индивидуальная программа',together_f2:'Интерактивные материалы и упражнения',together_f3:'Домашние задания с проверкой',together_f4:'Поддержка между уроками',select_program:'Выбрать программу',prime_tag:'IN DEPTH / 60 MIN',prime_desc:'Для тех, кому нужна углублённая практика, экзамены, карьера, переезд и уверенная речь.',prime_mode:'1:1 · ZOOM · 60 МИНУТ',prime_f1:'Всё из Together + расширенная практика',prime_f2:'Более глубокий разбор грамматики и акцента',prime_f3:'Подготовка IELTS / TOEFL / SAT по запросу',prime_f4:'Персональный сайт-тренажёр для закрепления',solo_tag:'SELF-STUDY / CONSULTING',solo_desc:'Для самостоятельных: гибкий график, персональная программа и преподаватель рядом.',per_month:'/ месяц',solo_mode:'SELF-STUDY · 4 СОЗВОНА В МЕСЯЦ',solo_consult:'Видеоконсультации',solo_four:'4 × 40 минут',solo_schedule:'Самостоятельных занятий',solo_schedule_n:'2–3 в неделю',solo_f1:'Персональная программа и материалы',solo_f2:'Самостоятельные занятия в удобное время',solo_f3:'Разбор ошибок на видеоконсультациях',solo_f4:'Обратная связь и поддержка в чате',pricing_note:'Стоимость указана по тарифам школы для выбранной валюты, а не по биржевому курсу. Состав программы и расписание согласовываются индивидуально.',contact_kicker:'03 / Контактная информация',contact_title:'Let’s make<br>it <em>happen.</em>',contact_desc:'Хочешь познакомиться, обсудить программу, записаться на пробный урок или приобрести консультацию? Напиши мне — начнём с разговора.',contact_cta:'Написать в Telegram',tg_purpose:'запись и консультации',ig_purpose:'контент, жизнь школы и отзывы',contact_caption:'По вопросам сотрудничества, подтверждения подлинности сертификатов и другим официальным запросам — на электронную почту.',cefr_kicker:'04 / Тестирование CEFR',cefr_title:'Know your <em>level.</em>',cefr_intro:'Не «кажется, у меня B2», а структурированная проверка знаний с разбором результатов и именным сертификатом школы.',cefr_subtitle:'Твой английский — по полочкам.',cefr_p1:'Mari English School проводит индивидуальное внутреннее тестирование уровня английского по шкале CEFR (A1–C1). Проверяем грамматику, лексику, чтение, аудирование, письмо и устную речь.',cefr_p2:'Тест проходит онлайн с включёнными камерой и микрофоном. После проверки ты получаешь обратную связь по каждому навыку, рекомендации и персональный сертификат с подтверждённым уровнем по внутренней системе школы.',cefr_length:'индивидуальное тестирование',cefr_scale:'оценка по шкале CEFR',cefr_six:'комплексная проверка навыков',days:'дней',cefr_delivery:'обратная связь и оформление результата',cefr_cta:'Записаться на тестирование',cefr_disclaimer:'Это внутреннее оценивание Mari English School, а не государственный экзамен и не международный сертификат IELTS, TOEFL или Cambridge.',cefr_sample:'Сертификат подтверждения уровня',sample_label:'ОБРАЗЕЦ / SAMPLE',course_kicker:'Второй тип сертификата',course_title:'And that’s<br><em>a wrap.</em>',course_desc:'После завершения подходящего курса ученики могут получить именной Certificate of Completion с названием программы, количеством академических часов и датами обучения.',course_note:'Сертификат школы подтверждает обучение на соответствующей программе; он не заменяет официальные результаты международных экзаменов.',ask_cert:'Узнать об условиях выдачи',footer_phrase:'More than lessons. A different way to speak.',footer_online:'ONLINE · ANYWHERE IN THE WORLD'},
@@ -95,6 +261,29 @@
     try{const storedCur=localStorage.getItem('mari-currency');if(storedCur&&currencySymbols[storedCur])currentCurrency=storedCur;setLanguage(localStorage.getItem('mari-language')==='en'?'en':'ru')}catch(e){setLanguage('ru')}
     document.getElementById('current-year').textContent=String(new Date().getFullYear());
     if('IntersectionObserver' in window){const ob=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');ob.unobserve(entry.target)}})},{threshold:.08,rootMargin:'0px 0px -15px 0px'});document.querySelectorAll('.reveal').forEach(el=>ob.observe(el));}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+
+    // The small phone-only booking action is revealed after the hero scrolls away.
+    (function(){
+      const quick = document.getElementById('mobile-quick-cta');
+      const hero = document.querySelector('.hero');
+      const media = window.matchMedia('(max-width: 600px)');
+      if (!quick || !hero) return;
+      function updateQuick() {
+        const contacts=document.getElementById('contacts');
+        const footer=document.querySelector('.footer');
+        const contactVisible=contacts && contacts.getBoundingClientRect().top < innerHeight-80 && contacts.getBoundingClientRect().bottom > 80;
+        const footerVisible=footer && footer.getBoundingClientRect().top < innerHeight-15;
+        const active = media.matches && hero.getBoundingClientRect().bottom < 120 && !contactVisible && !footerVisible;
+        quick.classList.toggle('shown', active);
+        quick.setAttribute('aria-hidden', String(!active));
+        const link=quick.querySelector('a');
+        if (link) link.tabIndex=active ? 0 : -1;
+      }
+      window.addEventListener('scroll', updateQuick, {passive:true});
+      window.addEventListener('resize', updateQuick, {passive:true});
+      updateQuick();
+    })();
+
   </script>
 </body>
 </html>
